@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		940CB6601D50E4B80023D37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CB65F1D50E4B80023D37D /* AppDelegate.swift */; };
-		940CB6621D50E4B80023D37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CB6611D50E4B80023D37D /* ViewController.swift */; };
+		940CB6621D50E4B80023D37D /* PrimeNumberDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CB6611D50E4B80023D37D /* PrimeNumberDetectorViewController.swift */; };
 		940CB6651D50E4B80023D37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940CB6631D50E4B80023D37D /* Main.storyboard */; };
 		940CB6671D50E4B80023D37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940CB6661D50E4B80023D37D /* Assets.xcassets */; };
 		940CB66A1D50E4B80023D37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940CB6681D50E4B80023D37D /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		940CB65C1D50E4B80023D37D /* TestDrivenDevelopmentExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrivenDevelopmentExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940CB65F1D50E4B80023D37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		940CB6611D50E4B80023D37D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		940CB6611D50E4B80023D37D /* PrimeNumberDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberDetectorViewController.swift; sourceTree = "<group>"; };
 		940CB6641D50E4B80023D37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940CB6661D50E4B80023D37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940CB6691D50E4B80023D37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +97,9 @@
 		940CB65E1D50E4B80023D37D /* TestDrivenDevelopmentExample */ = {
 			isa = PBXGroup;
 			children = (
-				940CB65F1D50E4B80023D37D /* AppDelegate.swift */,
-				940CB6611D50E4B80023D37D /* ViewController.swift */,
-				940CB6631D50E4B80023D37D /* Main.storyboard */,
-				940CB6661D50E4B80023D37D /* Assets.xcassets */,
-				940CB6681D50E4B80023D37D /* LaunchScreen.storyboard */,
-				940CB66B1D50E4B80023D37D /* Info.plist */,
+				940CB6961D5139010023D37D /* Controllers */,
+				940CB6951D5138FB0023D37D /* Model */,
+				940CB6941D5138F30023D37D /* Views */,
 			);
 			path = TestDrivenDevelopmentExample;
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				940CB6811D50E4B80023D37D /* Info.plist */,
 			);
 			path = TestDrivenDevelopmentExampleUITests;
+			sourceTree = "<group>";
+		};
+		940CB6941D5138F30023D37D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				940CB6631D50E4B80023D37D /* Main.storyboard */,
+				940CB6661D50E4B80023D37D /* Assets.xcassets */,
+				940CB6681D50E4B80023D37D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		940CB6951D5138FB0023D37D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				940CB66B1D50E4B80023D37D /* Info.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		940CB6961D5139010023D37D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				940CB65F1D50E4B80023D37D /* AppDelegate.swift */,
+				940CB6611D50E4B80023D37D /* PrimeNumberDetectorViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940CB6621D50E4B80023D37D /* ViewController.swift in Sources */,
+				940CB6621D50E4B80023D37D /* PrimeNumberDetectorViewController.swift in Sources */,
 				940CB6601D50E4B80023D37D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +508,7 @@
 				940CB6861D50E4B80023D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940CB6871D50E4B80023D37D /* Build configuration list for PBXNativeTarget "TestDrivenDevelopmentExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				940CB6891D50E4B80023D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940CB68A1D50E4B80023D37D /* Build configuration list for PBXNativeTarget "TestDrivenDevelopmentExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +526,7 @@
 				940CB68C1D50E4B80023D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
